@@ -42,17 +42,31 @@ function CalcularRiesgo(){
         document.getElementById('textoResultado').textContent = calificacion;
         document.getElementById('resultado').style.backgroundColor = '#00FF00';
         document. getElementById('resultado').style.display = 'block';
+        recomendacion1 = '<li>Está melo mijo</li>';
+        document.getElementById('recomendaciones').append(recomendacion1);
         
     }else if(calificacion <= 5){
         calificacion = 'Riesgo Moderado';
         document.getElementById('textoResultado').textContent = calificacion;
         document.getElementById('resultado').style.backgroundColor = '#FFFF00';
         document. getElementById('resultado').style.display = 'block';
-        document.getElementById('recomendaciones').append()
+        recomendacion2 = '<li>Tome mas agua mijo</li>';
+        document.getElementById('recomendaciones').append(recomendacion2);
     }else{
         calificacion = 'Riesgo Alto';
         document.getElementById('textoResultado').textContent = calificacion;
         document.getElementById('resultado').style.backgroundColor = '#E3001B';
         document. getElementById('resultado').style.display = 'block';
+        recomendacion3 = '<li>No hace daño visitar al medico y cambiar habitos alimenticios</li>';
+        document.createElement('recomendaciones').append("li");
     }
 }
+function Limpiar(){
+    document.getElementById('edad').value= '';
+    document.getElementById('presion').value= '';
+    document.getElementById('colesterol').value= '';
+    document.getElementById('fumador').value= '';
+    document.getElementById('resultado').style.backgroundColor = '';
+    document.getElementById('textoResultado').textContent = '';
+}
+

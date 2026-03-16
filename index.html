@@ -1,58 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de Riesgo Cardiovascular</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStyle</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="nombre-titulo">
+            <a href="http://127.0.0.1:5500/techStyle/index.html">TechStyle</a>
+        </div>
 
-  <div class="contenedor" id="app">
-    <div class="titulo">
-    <h1>❤️ Calculadora de Riesgo Cardiovascular</h1>
-    </div>
-    <p class="subtitulo">Ingresa tus datos para conocer tu nivel de riesgo</p>
+        <nav>
+            <ul>
+                <li><a href="">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
 
-    <div class="formulario">
+    </header>
 
-      <div class="campo">
-        <label for="edad">Edad (años):</label>
-        <input type="number" id="edad" placeholder="Ej: 35" min="1" max="120" value="" required>
-      </div>
+    <section class="hero">
+        <div class="texto">
+            <h2>Accesorios modernos para tu estilo digital</h2>
+        </div>
 
-      <div class="campo">
-        <label for="presion">Presión sistólica (mmHg):</label>
-        <input type="number" id="presion" placeholder="Ej: 120" min="60" max="250" value="" required>
-      </div>
+        <div class="imgen-hero">
+            <img src="img/mouse-hero.jpg" alt="">
+        </div>
+    </section>
 
-      <div class="campo">
-        <label for="colesterol">Colesterol total (mg/dL):</label>
-        <input type="number" id="colesterol" placeholder="Ej: 180" min="100" max="400" value="" required>
-      </div>
+    <section class="nosotros">
+            <h3>Nosotros</h3>
+        <div class="nosotros-contenedor">
+            <div class="contenedor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore amet officia laboriosam dolor eaque. Quos, dignissimos repudiandae! Assumenda error quam saepe, odit reiciendis, fugit vel corrupti dignissimos iusto, in labore?</div>
+            <div class="contenedor">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores dolorem quasi ratione libero. Quam odit harum, rem voluptas nostrum ex deleniti laudantium tenetur incidunt perspiciatis dolorem quasi. Delectus, cupiditate esse?</div>
+            <div class="contenedor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorem non recusandae eaque odio debitis iste dolores quod nostrum necessitatibus, iure porro et delectus sequi cupiditate in nam neque accusamus?</div>
+        </div>
+    </section>
 
-      <div class="campo">
-        <label for="fumador">¿Fumas?</label>
-        <select id="fumador">
-          <option value="">-- Selecciona --</option>
-          <option value="si">Sí</option>
-          <option value="no">No</option>
-        </select>
-      </div>
-      <div class="botones">
-        <button id="btnCalcular">Calcular Riesgo</button>
-        <button id="btnLimpiar">Limpiar</button>
-      </div>
-    </div>
+    <section class="productos">
+        <h2>Productos</h2>
+            <div class="productos-contenedor">
+                <article class="productos-caja">
+                        <div class="producto">
+                            <img src="img/mouse-gamer.jpg" alt="">
+                            <h3>Mouse Gamer</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ut, cumque possimus omnis expedita amet quisquam ratione aperiam, debitis ea animi dignissimos sit dolorum deleniti explicabo illo minus, sed obcaecati!</p>
+                            <span>$50.000</span>
+                            <a href="">Comprar</a>
+                        </div>
+                </article>
+            
+                <article>
+                        <div class="producto">
+                            <img src="img/mouse-gamer.jpg" alt="">
+                            <h3>Mouse Gamer</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque architecto molestias laboriosam quia dolore similique est repellat eveniet perspiciatis laborum iure iusto voluptatibus voluptates obcaecati, quos accusamus in? Modi?</p>
+                            <span>$50.000</span>
+                            <a href="carrito.html" value="mouse-gamer" id="mouse-gamer" name="mouse-gamer">Comprar</a>
+                        </div>
+                </article>
+            
+                <article>
+                        <div class="producto">
+                            <img src="img/mouse-gamer.jpg" alt="">
+                            <h3>Mouse Gamer</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ratione sed perspiciatis, consectetur sequi optio iste assumenda ut, alias tenetur omnis dolor id eos, at beatae maiores consequatur et atque?</p>
+                            <span>$50.000</span>
+                            <a href="">Comprar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+    </section>
 
-    <div class="resultado" id="resultado">
-      <h2>Resultado</h2>
-      <p id="textoResultado"></p>
-      <div id="nivelRiesgo" class="nivel"></div>
-      <ul id="recomendaciones"></ul>
-    </div>
+    <section class="contacto">
+        <h3>Contacto</h3>
 
-  </div>
-  <script src="script.js"></script>
+        <div class="formulario">
+            <div class="nombre-correo">
+                <span>Nombre:</span>
+                <input type="text" class="nombre">
+                <span>Correo: </span>
+                <input type="text" class="correo">
+            </div>
+            <div class="mensaje-caja">
+                <span>Mensaje:</span>
+                <input type="text" class="mensaje">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="informacion">
+            <span>©️Derechos de autos de su madre.</span>
+            <span>techstyle@techstyle.com</span>
+        </div>
+
+        <div class="redes">
+            <img src="img/instagram.jpg" alt="">
+            <img src="img/instagram.jpg" alt="">
+            <img src="img/instagram.jpg" alt="">
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
